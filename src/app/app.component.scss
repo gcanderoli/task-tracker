@@ -1,0 +1,16 @@
+.example-card {
+  max-width: 70%;
+  margin: 0 auto 20px;
+}
+
+.mat-card-actions {
+  text-align: right;
+}
+
+.addTask {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  transform: scale(2);
+
+}

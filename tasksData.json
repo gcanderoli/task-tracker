@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Web app",
+      "description": "develop a working app",
+      "estimate": "50",
+      "state": "In Progress"
+    },
+    {
+      "id": 2,
+      "name": "Mobile app",
+      "description": "develop a working mobile app",
+      "estimate": 3,
+      "state": "In Progress"
+    },
+    {
+      "id": 3,
+      "name": "New design",
+      "description": "Create a new design",
+      "estimate": 4,
+      "state": "Completed"
+    },
+    {
+      "id": 4,
+      "name": "Develop a website",
+      "description": "Work with the designer in a new website",
+      "estimate": 4,
+      "state": "Completed"
+    },
+    {
+      "id": 5,
+      "name": "Create a PWA",
+      "description": "Create a PWA",
+      "estimate": 4,
+      "state": "Completed"
+    }
+  ]
+}

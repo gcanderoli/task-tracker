@@ -1,0 +1,29 @@
+<div>
+  <h2>{{title}}</h2>
+  <form [formGroup]="addForm" novalidate class="form">
+
+    <mat-form-field class="example-full-width">
+      <input matInput formControlName="name" placeholder="Name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput formControlName="description" placeholder="Description">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput formControlName="estimate" placeholder="Estimated hs.">
+    </mat-form-field>
+
+    <mat-form-field class="select-field">
+      <mat-select formControlName="state" placeholder="State">
+        <mat-option *ngFor="let state of states" [value]="state">
+          {{state}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button *ngIf="!taskData" mat-flat-button class="btn btn-success" (click)="onSubmit()">Save</button>
+    <button *ngIf="taskData" mat-flat-button class="btn btn-success" (click)="onUpdate()">Update</button>
+
+  </form>
+</div>
