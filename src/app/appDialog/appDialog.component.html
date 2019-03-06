@@ -15,8 +15,8 @@
     </mat-form-field>
 
     <mat-form-field class="select-field">
-      <mat-select formControlName="state" placeholder="State">
-        <mat-option *ngFor="let state of states" [value]="state">
+      <mat-select formControlName="state" placeholder="State" [disabled]="disableSelect">
+        <mat-option *ngFor="let state of states; index as i" [value]="state" [disabled]='optionDisabled'>
           {{state}}
         </mat-option>
       </mat-select>

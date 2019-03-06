@@ -7,12 +7,12 @@ import { AppService } from './appservice.service';
 import { Task } from './task.model';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements OnInit {
-  title = 'task-tracker';
+  title = "task-tracker";
   tasksData;
 
   constructor(
@@ -22,9 +22,9 @@ export class AppComponent implements OnInit {
     sanitizer: DomSanitizer
   ) {
     iconRegistry.addSvgIcon(
-      'add',
+      "add",
       sanitizer.bypassSecurityTrustResourceUrl(
-        '../assets/outline-add_circle_outline-24px.svg'
+        "../assets/outline-add_circle_outline-24px.svg"
       )
     );
   }
@@ -52,9 +52,9 @@ export class AppComponent implements OnInit {
   editTask(task: Task): void {
     const dialogRef = this.dialog.open(AppDialogComponent, {
       position: {
-        top: '20%'
+        top: "20%"
       },
-      data: { taskData: task, title: 'Edit task' }
+      data: { taskData: task, title: "Edit task" }
     });
     dialogRef.afterClosed().subscribe(result => {
       this.getTasks();
@@ -65,9 +65,9 @@ export class AppComponent implements OnInit {
   openDialog(): void {
     const dialogRef = this.dialog.open(AppDialogComponent, {
       position: {
-        top: '20%'
+        top: "20%"
       },
-      data: { title: 'Add new task' }
+      data: { title: "Add new task", disableSelect: true }
     });
 
     dialogRef.afterClosed().subscribe(result => {

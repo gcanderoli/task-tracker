@@ -4,4 +4,9 @@ export class Task {
   description?: string;
   estimate?: number;
   state?: string;
+  creation?: null;
+  timePlanned?: null;
+  timeInProgress?: null;
+  updating?: null;
+  completed?: null;
 }

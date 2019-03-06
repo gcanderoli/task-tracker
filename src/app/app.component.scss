@@ -3,8 +3,23 @@
   margin: 0 auto 20px;
 }
 
+.mat-card-content {
+  width: 80%;
+  display: inline-block;
+}
+
+.progress-panel {
+  width: 20%;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
 .mat-card-actions {
   text-align: right;
+
+  & button:last-child {
+    margin-left: 5px;
+  }
 }
 
 .addTask {
@@ -13,4 +28,12 @@
   right: 5%;
   transform: scale(2);
 
+}
+
+.completed-class {
+  background-color: #27ae60;
+}
+
+.inprogress-class {
+  background-color: #f1c40f;
 }

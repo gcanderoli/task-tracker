@@ -5,35 +5,66 @@
       "name": "Web app",
       "description": "develop a working app",
       "estimate": "50",
-      "state": "In Progress"
+      "state": "In Progress",
+      "dateCreated": "2019-03-06T14:45:27.547Z"
     },
     {
       "id": 2,
       "name": "Mobile app",
       "description": "develop a working mobile app",
       "estimate": 3,
-      "state": "In Progress"
+      "state": "Planned",
+      "dateCreated": "2019-03-06T14:45:27.547Z"
     },
     {
       "id": 3,
       "name": "New design",
       "description": "Create a new design",
       "estimate": 4,
-      "state": "Completed"
+      "state": "Completed",
+      "dateCreated": "2019-03-06T14:45:27.547Z"
     },
     {
       "id": 4,
       "name": "Develop a website",
       "description": "Work with the designer in a new website",
       "estimate": 4,
-      "state": "Completed"
+      "state": "Planned",
+      "dateCreated": "2019-03-06T14:45:27.547Z"
     },
     {
       "id": 5,
       "name": "Create a PWA",
       "description": "Create a PWA",
       "estimate": 4,
-      "state": "Completed"
+      "state": "In Progress",
+      "dateCreated": "2019-03-06T14:45:27.547Z"
+    },
+    {
+      "id": 6,
+      "name": "Fix bugs",
+      "description": "fix all bugs.",
+      "estimate": "5",
+      "state": "In Progress",
+      "dateCreated": "2019-03-06T14:45:27.547Z"
+    },
+    {
+      "id": 7,
+      "name": "Migrate to new version",
+      "description": "migrate app to new version.",
+      "estimate": "30",
+      "state": "Completed",
+      "timePlanned": 2.6895705555555556,
+      "timeInProgress": 1.2039570555555557,
+      "timeTotal": 3.8944505555555557
+    },
+    {
+      "id": 8,
+      "name": "test name1",
+      "description": "testing",
+      "estimate": "60",
+      "state": "Planned",
+      "dateCreated": "2019-03-06T14:45:27.547Z"
     }
   ]
 }

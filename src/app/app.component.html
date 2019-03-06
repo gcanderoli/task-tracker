@@ -6,7 +6,8 @@
 </div>
 
 <div *ngIf="tasksData">
-  <mat-card class="example-card" *ngFor="let task of tasksData">
+  <mat-card [ngClass]="{'example-card': true, 'completed-class': task.state == 'Completed', 'inprogress-class': task.state == 'In Progress'}"
+    *ngFor="let task of tasksData">
     <mat-card-header>
       <mat-card-title>{{task.name}}</mat-card-title>
     </mat-card-header>
@@ -19,8 +20,14 @@
       <p>Status: {{task.state}}</p>
     </mat-card-content>
 
+    <div class="progress-panel">
+      <p *ngIf="task.timePlanned">Planned: {{task.timePlanned | number}} hs.</p>
+      <p *ngIf="task.timeInProgress">In Progress: {{task.timeInProgress | number}} hs.</p>
+      <p *ngIf="task.timeTotal">Total: {{task.timeTotal | number}} hs.</p>
+    </div>
+
     <mat-card-actions>
-      <button mat-flat-button (click)="editTask(task)">Edit</button>
+      <button *ngIf="task.state !== 'Completed'" mat-flat-button (click)="editTask(task)">Edit</button>
       <button mat-flat-button (click)="deleteTask(task)">Delete</button>
     </mat-card-actions>
   </mat-card>
